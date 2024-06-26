@@ -15,6 +15,7 @@ function restoreOptions() {
   browser.storage.local.get().then((result) => {
     inputSelector('#unsplash-access-key').value =
       result.unsplashAccessKey ?? "";
+    inputSelector("#unsplash-username").value = result.unsplashUsername ?? "";
 
     inputSelector('#openweathermap-access-key').value =
       result.openweathermapAccessKey ?? "";
@@ -39,19 +40,12 @@ const form = document.querySelector("form")
  * @returns {void}
  */
 form.addEventListener("submit", (event) => {
-  console.log(event)
   event.preventDefault();
   const formData = new FormData(form);
-  console.log(formData)
-  console.log({
-    unsplashAccessKey: formData.get("unsplash-access-key"),
-    openweathermapAccessKey: formData.get("openweathermap-access-key"),
-    latitude: formData.get("latitude"),
-    longitude: formData.get("longitude"),
-  })
 
   browser.storage.local.set({
     unsplashAccessKey: formData.get("unsplash-access-key"),
+    unsplashUsername: formData.get("unsplash-username"),
     openweathermapAccessKey: formData.get("openweathermap-access-key"),
     latitude: formData.get("latitude"),
     longitude: formData.get("longitude"),

@@ -120,6 +120,9 @@ export async function getRandomPhoto(force) {
 
   const url = new URL("https://api.unsplash.com/photos/random");
   url.searchParams.append("orientation", "landscape");
+  if (storage.unsplashUsername) {
+    url.searchParams.append("username", storage.unsplashUsername);
+  }
 
   const response = await fetch(url, {
     method: "GET",
