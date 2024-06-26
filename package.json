@@ -1,0 +1,28 @@
+{
+  "name": "home-sweet-home",
+  "version": "1.0.0",
+  "description": "Personal new tab page",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "css:watch": "tailwindcss -i ./extension/styles/input.css -o ./extension/build/styles.css --watch",
+    "css:build": "tailwindcss -i ./extension/styles/input.css -o ./extension/build/styles.css",
+    "tsc": "tsc",
+    "build": "npm run tsc && npm run css:build && npm run web-ext build",
+    "start": "npm run css:watch & npm run web-ext run",
+    "web-ext": "web-ext -s ./extension -a ./web-ext-artifacts",
+    "prettier": "prettier --write ./extension/**/*.{mjs,html}"
+  },
+  "devDependencies": {
+    "@preact/signals": "^1.2.3",
+    "@types/chrome": "^0.0.268",
+    "@types/firefox-webext-browser": "^120.0.4",
+    "blurhash": "^2.0.5",
+    "htm": "^3.1.1",
+    "preact": "^10.22.0",
+    "prettier": "^3.3.2",
+    "tailwindcss": "^3.4.4",
+    "typescript": "^5.5.2",
+    "web-ext": "^8.2.0"
+  }
+}

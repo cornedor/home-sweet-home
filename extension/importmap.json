@@ -1,0 +1,14 @@
+{
+  "imports": {
+    "@preact/signals": "https://ga.jspm.io/npm:@preact/signals@1.2.3/dist/signals.module.js",
+    "htm/preact": "https://ga.jspm.io/npm:htm@3.1.1/preact/index.module.js",
+    "preact": "https://ga.jspm.io/npm:preact@10.22.0/dist/preact.module.js",
+    "preact/hooks": "https://ga.jspm.io/npm:preact@10.22.0/hooks/dist/hooks.module.js"
+  },
+  "scopes": {
+    "https://ga.jspm.io/": {
+      "@preact/signals-core": "https://ga.jspm.io/npm:@preact/signals-core@1.6.0/dist/signals-core.module.js",
+      "htm": "https://ga.jspm.io/npm:htm@3.1.1/dist/htm.module.js"
+    }
+  }
+}

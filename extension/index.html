@@ -1,0 +1,73 @@
+<!doctype html>
+<html>
+  <head>
+    <meta charset="utf-8" />
+    <title>New Tab</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <link rel="stylesheet" href="./build/styles.css" />
+    <link rel="stylesheet" href="./assets/remix/remixicon.css" />
+    <meta name="theme-color" content="#4285f4" />
+  </head>
+  <body class="bg-cover h-ful bg-center bg-[#DADADA]">
+    <script type="importmap">
+      {
+        "imports": {
+          "@preact/signals": "https://ga.jspm.io/npm:@preact/signals@1.2.3/dist/signals.module.js",
+          "blurhash": "https://ga.jspm.io/npm:blurhash@2.0.5/dist/esm/index.js",
+          "fast-average-color": "https://ga.jspm.io/npm:fast-average-color@9.4.0/dist/index.esm.js",
+          "htm/preact": "https://ga.jspm.io/npm:htm@3.1.1/preact/index.module.js",
+          "preact": "https://ga.jspm.io/npm:preact@10.22.0/dist/preact.module.js",
+          "preact/hooks": "https://ga.jspm.io/npm:preact@10.22.0/hooks/dist/hooks.module.js"
+        },
+        "scopes": {
+          "https://ga.jspm.io/": {
+            "@preact/signals-core": "https://ga.jspm.io/npm:@preact/signals-core@1.6.1/dist/signals-core.module.js",
+            "htm": "https://ga.jspm.io/npm:htm@3.1.1/dist/htm.module.js"
+          }
+        }
+      }
+    </script>
+    <link
+      rel="modulepreload"
+      href="https://ga.jspm.io/npm:@preact/signals-core@1.6.1/dist/signals-core.module.js"
+      integrity="sha384-nq1QNlEbf0lKgRAqAEzQewlNGP21zkkeWEH5ZOxO+JMAn+rrIzTG5ocfVyg00RIy"
+    />
+    <link
+      rel="modulepreload"
+      href="https://ga.jspm.io/npm:@preact/signals@1.2.3/dist/signals.module.js"
+      integrity="sha384-5Urf+jJk42uWnskR4Gb+gOXzV1Kox1SIRBgUqyYoPkIVgA6AMXS27xdupLdtLLzF"
+    />
+    <link
+      rel="modulepreload"
+      href="https://ga.jspm.io/npm:blurhash@2.0.5/dist/esm/index.js"
+      integrity="sha384-3enY5GXd3F07OsGE/dbvIIFQn0Qwm+/vqeblwttJZ6+3n7a/l5a6lpRHboMPs7HO"
+    />
+    <link
+      rel="modulepreload"
+      href="https://ga.jspm.io/npm:fast-average-color@9.4.0/dist/index.esm.js"
+      integrity="sha384-7eyAzc5z0DKTeNJPFWIiy43GkZnab7dDuQvKrxwAF2Y8zc+Ru8LNoWP/aerfNxfy"
+    />
+    <link
+      rel="modulepreload"
+      href="https://ga.jspm.io/npm:htm@3.1.1/dist/htm.module.js"
+      integrity="sha384-TN0UakngI8pq5k16y3C0BU3dAPlFdDcikulluO4T/mxTZvotVPN52CBjnl9OyUHk"
+    />
+    <link
+      rel="modulepreload"
+      href="https://ga.jspm.io/npm:htm@3.1.1/preact/index.module.js"
+      integrity="sha384-6T10/HUcGjeJYo2qLml3p3eGhUrH5tw2JMPuOuK1i9tWvJSobKru7xnn5NgHfaH5"
+    />
+    <link
+      rel="modulepreload"
+      href="https://ga.jspm.io/npm:preact@10.22.0/dist/preact.module.js"
+      integrity="sha384-1gSoikDKjYG5Xthi7h+iDlDBJGrPW8z/7m0WLMkbK5NIvvwHkort7gyw02IjIyKQ"
+    />
+    <link
+      rel="modulepreload"
+      href="https://ga.jspm.io/npm:preact@10.22.0/hooks/dist/hooks.module.js"
+      integrity="sha384-bx/n8YW6SUX66slV+/v7M5OwXpMVU8wFS9vtFpBUrUWyBgchECbuM86ByvsGT3HV"
+    />
+
+    <script type="module" src="./App.mjs"></script>
+  </body>
+</html>

@@ -1,0 +1,28 @@
+{
+  "newBackground": {
+    "message": "新背景",
+    "description": "The label of the button to apply a new background"
+  },
+  "extendTime": {
+    "message": "延长时间",
+    "description": "The label of the button to extend the time"
+  },
+  "showWidgets": {
+    "message": "显示小部件",
+    "description": "The label of the button to show the widgets"
+  },
+  "hideWidgets": {
+    "message": "隐藏小部件",
+    "description": "The label of the button to hide the widgets"
+  },
+  "searchWith": {
+    "message": "用 $ENGINE$ 搜索",
+    "description": "The label of the search input",
+    "placeholders": {
+      "engine": {
+        "content": "$1",
+        "example": "Google"
+      }
+    }
+  }
+}

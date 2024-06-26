@@ -1,0 +1,28 @@
+{
+  "newBackground": {
+    "message": "Nieuwe achtergrond",
+    "description": "The label of the button to apply a new background"
+  },
+  "extendTime": {
+    "message": "Tijd verlengen",
+    "description": "The label of the button to extend the time"
+  },
+  "showWidgets": {
+    "message": "Widgets weergeven",
+    "description": "The label of the button to show the widgets"
+  },
+  "hideWidgets": {
+    "message": "Widgets verbergen",
+    "description": "The label of the button to hide the widgets"
+  },
+  "searchWith": {
+    "message": "Zoeken met $ENGINE$",
+    "description": "The label of the search input",
+    "placeholders": {
+      "engine": {
+        "content": "$1",
+        "example": "Google"
+      }
+    }
+  }
+}

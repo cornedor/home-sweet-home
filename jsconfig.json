@@ -1,0 +1,7 @@
+{
+  "compilerOptions": {
+    "allowJs": true,
+    "types": ["firefox-webext-browser"],
+    "noEmit": true
+  }
+}

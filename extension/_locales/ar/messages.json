@@ -1,0 +1,28 @@
+{
+  "newBackground": {
+    "message": "خلفية جديدة",
+    "description": "The label of the button to apply a new background"
+  },
+  "extendTime": {
+    "message": "إطالة الوقت",
+    "description": "The label of the button to extend the time"
+  },
+  "showWidgets": {
+    "message": "إظهار الأدوات المساعدة",
+    "description": "The label of the button to show the widgets"
+  },
+  "hideWidgets": {
+    "message": "إخفاء الأدوات المساعدة",
+    "description": "The label of the button to hide the widgets"
+  },
+  "searchWith": {
+    "message": "البحث مع $ENGINE$",
+    "description": "The label of the search input",
+    "placeholders": {
+      "engine": {
+        "content": "$1",
+        "example": "Google"
+      }
+    }
+  }
+}

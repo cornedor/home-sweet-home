@@ -1,0 +1,28 @@
+{
+  "newBackground": {
+    "message": "新しい背景",
+    "description": "The label of the button to apply a new background"
+  },
+  "extendTime": {
+    "message": "時間を延長する",
+    "description": "The label of the button to extend the time"
+  },
+  "showWidgets": {
+    "message": "ウィジェットを表示",
+    "description": "The label of the button to show the widgets"
+  },
+  "hideWidgets": {
+    "message": "ウィジェットを非表示",
+    "description": "The label of the button to hide the widgets"
+  },
+  "searchWith": {
+    "message": "$ENGINE$ で検索する",
+    "description": "The label of the search input",
+    "placeholders": {
+      "engine": {
+        "content": "$1",
+        "example": "Google"
+      }
+    }
+  }
+}

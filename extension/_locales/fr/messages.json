@@ -1,0 +1,28 @@
+{
+  "newBackground": {
+    "message": "Nouveau fond d'écran",
+    "description": "The label of the button to apply a new background"
+  },
+  "extendTime": {
+    "message": "Prolonger le temps",
+    "description": "The label of the button to extend the time"
+  },
+  "showWidgets": {
+    "message": "Afficher les widgets",
+    "description": "The label of the button to show the widgets"
+  },
+  "hideWidgets": {
+    "message": "Masquer les widgets",
+    "description": "The label of the button to hide the widgets"
+  },
+  "searchWith": {
+    "message": "Rechercher avec $ENGINE$",
+    "description": "The label of the search input",
+    "placeholders": {
+      "engine": {
+        "content": "$1",
+        "example": "Google"
+      }
+    }
+  }
+}

@@ -1,0 +1,18 @@
+{
+  "compilerOptions": {
+    "target": "ESNext",
+    "allowJs": true,
+    "checkJs": true,
+    "moduleResolution": "NodeNext",
+    "module": "NodeNext",
+    "alwaysStrict": true,
+    "strictNullChecks": false,
+    "emitDeclarationOnly": true,
+    "declaration": true,
+    "outDir": "types",
+    "removeComments": false,
+    "types": ["firefox-webext-browser"]
+  },
+  "include": ["extension/**/*.mjs"],
+  "exclude": ["./node_modules"]
+}
