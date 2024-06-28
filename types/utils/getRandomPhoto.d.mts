@@ -5,10 +5,10 @@
 export function getRandomPhoto(force: boolean): Promise<PhotoData | null>;
 /**
  *
- * @param {HTMLElement} element
+ * @param {HTMLImageElement} element
  * @param {boolean} [force] - Whether to force a new photo even if one is cached
  */
-export function applyRandomPhoto(element: HTMLElement, force?: boolean): void;
+export function applyRandomPhoto(element: HTMLImageElement, force?: boolean): void;
 /**
  * Extends the expiration time of the cached photo data by 7 days
  * @returns {void} Returns void

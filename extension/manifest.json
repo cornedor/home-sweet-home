@@ -1,7 +1,7 @@
 {
   "manifest_version": 2,
   "name": "Home! Sweet Home!",
-  "version": "1.0.2",
+  "version": "1.0.3",
   "description": "A personal new tab page",
   "author": "corne",
   "homepage_url": "https://www.corne.info/",
@@ -17,17 +17,18 @@
       "id": "homepage@corne.info"
     }
   },
-  "content_security_policy": "script-src 'self' https://ga.jspm.io blob: 'sha256-1jAV6CdWkLL96+6nbSmW+evEGns1ecFnXBPz+e98aqQ='; object-src 'self'",
+  "content_security_policy": "script-src 'self' https://ga.jspm.io https://images.unsplash.com blob: 'sha256-1jAV6CdWkLL96+6nbSmW+evEGns1ecFnXBPz+e98aqQ='; object-src 'self'",
   "permissions": [
     "storage",
     "search",
     "idle",
+    "topSites",
     "https://*/*"
   ],
   "optional_permissions": [
     "<all_urls>",
     "bookmarks",
-    "topSites"
+    "history"
   ],
   "options_ui": {
     "page": "options.html"

@@ -25,11 +25,15 @@ export function Footer() {
     >
       <button
         class="flex gap-1"
-        onClick=${() =>
-      applyRandomPhoto(document.getElementById("background"), true)}
+        onClick=${() => {
+      const backgroundImage = document.getElementById("background")
+      if (backgroundImage instanceof HTMLImageElement) {
+        applyRandomPhoto(backgroundImage, true);
+      }
+    }}
       >
-        <i class="ri-unsplash-fill"></i> ${i18n.getMessage("newBackground")}
-      </button>
+      <i class="ri-unsplash-fill"></i> ${i18n.getMessage("newBackground")}
+      </button >
       <button class="flex gap-1" onClick=${() => extendTime()}>
         <i class="ri-timer-flash-line"></i> ${i18n.getMessage("extendTime")}
       </button>
@@ -44,6 +48,6 @@ export function Footer() {
       </button>
       <div class="flex-1"></div>
       ${userName ? html`<a href=${link}>${userName}</a>` : null}
-    </footer>
-  `;
+    </footer >
+    `;
 }

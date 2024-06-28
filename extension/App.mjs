@@ -23,7 +23,7 @@ function App() {
 
   return html`
     <div class="overflow-hidden h-full">
-      <div class="fixed top-0 left-0 right-0 bottom-0 bg-cover bg-center" id="background"></div>
+      <img class="fixed top-0 left-0 w-full h-full object-cover pointer-events-none" id="background" crossOrigin="anonymous" />
       <div
         class="flex items-center justify-center flex-col gap-16 transition-all ${showWidgetsClass}"
       >
@@ -39,4 +39,7 @@ function App() {
 
 render(html`<${App} />`, document.body);
 
-applyRandomPhoto(document.getElementById("background"));
+const backgroundImage = document.getElementById("background")
+if (backgroundImage instanceof HTMLImageElement) {
+  applyRandomPhoto(backgroundImage);
+}

@@ -86,11 +86,12 @@ function updateBlurHash(hash, photoWidth, photoHeight, url) {
 
   const image = new Image();
   image.src = url;
-  image.onload = () => {
+  image.crossOrigin = "anonymous";
+  image.addEventListener("load", () => {
     setTimeout(() => {
       document.body.removeChild(canvas);
     }, 200);
-  };
+  }, { once: true })
 }
 
 /**
@@ -161,14 +162,13 @@ export async function getRandomPhoto(force) {
 
 /**
  *
- * @param {HTMLElement} element
+ * @param {HTMLImageElement} element
  * @param {boolean} [force] - Whether to force a new photo even if one is cached
  */
 export function applyRandomPhoto(element, force = false) {
   getRandomPhoto(force).then((data) => {
-    if (data) {
-      element.style.backgroundImage = `url(${data.url})`;
-    }
+    if (!data) { return }
+    element.src = data.url;
   });
 }
 

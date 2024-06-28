@@ -6,7 +6,7 @@
   "scripts": {
     "test": "echo \"Error: no test specified\" && exit 1",
     "css:watch": "tailwindcss -i ./extension/styles/input.css -o ./extension/build/styles.css --watch",
-    "css:build": "tailwindcss -i ./extension/styles/input.css -o ./extension/build/styles.css",
+    "css:build": "tailwindcss -i ./extension/styles/input.css -o ./extension/build/styles.css --minify",
     "tsc": "tsc",
     "build": "npm run tsc && npm run css:build && npm run web-ext build",
     "start": "npm run css:watch & npm run web-ext run",
@@ -18,6 +18,7 @@
     "@types/chrome": "^0.0.268",
     "@types/firefox-webext-browser": "^120.0.4",
     "blurhash": "^2.0.5",
+    "fast-average-color": "^9.4.0",
     "htm": "^3.1.1",
     "preact": "^10.22.0",
     "prettier": "^3.3.2",
