@@ -4,6 +4,15 @@ This is a Firefox extension that I use to personalize my new tab page.
 
 ![Screenshot of the extension](./docs/screenshots/screenshot.jpeg)
 
+## Features
+
+ - Random Unsplash photos
+ - Basic features like clock, search and top sites
+ - Latest weather from OpenWeatherMap
+ - Placement of widgets based on uniformity of background
+ - Right-to-left support
+ - Smart actions based on recent browsing history (WIP)
+
 ## Development
 
 To develop this extension, you need to have [Node.js](https://nodejs.org/en/) and [npm](https://www.npmjs.com/) installed.
